@@ -1,0 +1,144 @@
+@charset "UTF-8";
+/*Todas as demais mídias*/
+
+/*Typical Device Breakpoints
+-----------------------------   
+Pequenas telas: até 600px 
+Celular: de 600px até 768px
+Tablet: de 768 até 992px
+Desktop: de 992 até 1200px
+Grandes Telas: acima de 1200px
+
+*/
+
+/*Versão Mobile - CSS PRINCIPAL*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3d7e83;
+}
+
+/*----CONFIGURAÇÃO DA IMAGEM DO TOPO ----*/
+header {
+    display: block;
+    height: 43vh; /*Altura da exibição da imagem do topo*/
+    background-image: url(../imagens/logocelular.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+/*-----------------------------------*/
+
+
+/*----CONFIGURAÇÃO DO MENU ----*/
+menu {
+    display: none; /*Fixar o MENU*/
+}
+
+menu ul {
+    list-style-type: none; /*Retirar a bolinha do MENU*/
+}
+
+menu ul li a { 
+    display: block; /*O MENU ficará vísivel*/
+    padding: 8px; /*Espaçmento interno*/
+    text-decoration: none; /*Retirar o sublinhado do Link*/
+    background-image: linear-gradient(to right, rgb(0, 0, 0), #042a2d); /*Cor do fundo do Menu*/
+    color: #fff; /*Cores dos nomes do Menu*/
+    text-align: center; /*Centralização do Menu*/
+    border-top: 2px solid rgb(0, 53, 80); /*Cor da linha acima de cada Menu*/
+}
+
+menu ul li a:hover {
+    text-decoration: underline;
+    background-image: linear-gradient(to right, rgb(0, 104, 122), rgb(5, 6, 6)); /*Cor do Menu após passar o mouse em cima*/
+}
+
+
+/*-----------------------------------*/
+
+
+/*----CONFIGURAÇÃO DO MENU HAMBUGUINHO ----*/
+span#burguer { 
+    display: block;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(42, 157, 166)); /*Cor do fundo do Menu*/
+    color: #fff; /*Cor do icone*/
+    text-align: center; /*Centralização do icone*/
+    padding: 5px; /*Espaçamento interno*/
+    cursor: pointer; /*O curso irá virar uma mão*/
+}
+
+span#burguer:hover {
+    color: black;
+    background-image: linear-gradient(to right, rgb(34, 192, 150), rgb(213, 213, 213)); /*Cor do fundo do Menu*/
+}
+/*-----------------------------------*/
+
+h1 {
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    width: 96vw; /*Largura da noticia*/
+    margin: auto; /*Centralizar a notícia*/
+    margin-top: 9px; /*Ditancia do MENU e a noticia*/
+    padding: 10px;
+    border-radius: 30px;
+}
+
+article p {
+    color: white;
+    text-align: justify;
+    text-indent: 30px;
+    padding: 5px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+}
+
+section h2 {
+    padding: 5px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+section p { /*Configuração dos pragrafos*/
+    color: black;
+
+    text-align: justify;
+    text-indent: 30px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+.img-sessao {
+    width: 96.5vw;
+    border: 2px solid black;
+    margin: auto;
+
+}
+
+#rodape {
+    display: flex;
+    height: 10vh;
+    margin-top: 40px;
+    background-color: #042a2d;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: white;
+    font-weight: bold;
+}

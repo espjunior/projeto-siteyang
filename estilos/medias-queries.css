@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/*Todas as demais mídias*/
+
+/*Typical Device Breakpoints
+-----------------------------   
+Pequenas telas: até 600px 
+Celular: de 600px até 768px
+Tablet: de 768 até 992px
+Desktop: de 992 até 1200px
+Grandes Telas: acima de 1200px
+*/
+
+@media screen and (min-width: 768px) {
+    header {
+        background-image: url(../imagens/logotablet.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+
+    span#burguer {
+      display: none; /*Quando a tela aumentar o Menu Hamburguer irá se ocultar*/
+  }
+
+    menu {
+      display: block; /*Fixar o MENU*/
+      background-color: black; /*Cor de fundo do MENU*/
+      text-align: right; /*Alinhamento do MENU à direita*/
+    }
+
+    menu ul li {
+      display: inline-block; /*Quando a tela aumentar o menu irá ficar um ao lado do outro*/
+      width: 100px; /*O menu irá ficar maior quando a tela aumentar*/
+  }
+
+    #container-principal {
+        display: flex;
+        position: relative;
+    }
+
+    #container-principal p {
+        display: flex;
+        position: relative;
+        justify-content: flex-start;
+        color: black;
+        padding: 15px;
+    }
+
+    #container-imagemtexto {
+        display: inline-block;
+        
+    }
+
+    #imgtablet {
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+        margin-left: 10px;
+        float: left;
+        width: 400px;
+    }
+    /*----------------------------*/
+
+    #container-segundo { /*Configuração da SECTION*/
+        display: flex;
+        position: relative;
+        
+    }
+
+    #container-segundo p { /*Configuração do Paragrafo*/
+        display: flex;
+        position: relative;
+        color: black;
+        padding: 15px;
+    }
+
+    #imgtablet02 { /*Configuração da Imagem*/
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+        margin-right: 10px;
+        float: right;
+        width: 400px;
+    }
+    /*----------------------------*/
+
+    #container-terceiro { /*Configuração da SECTION*/
+        display: flex;
+        position: relative;
+        
+    }
+
+    #container-terceiro p { /*Configuração do Paragrafo*/
+        display: flex;
+        position: relative;
+        color: black;
+        padding: 15px;
+        margin-top: 60px;
+    }
+
+    #imgtablet03 { /*Configuração da Imagem*/
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+        margin-right: 10px;
+        float: left;
+        width: 400px;
+    }
+    /*----------------------------*/
+
+    #container-quarto { /*Configuração da SECTION*/
+        display: flex;
+        position: relative;
+        
+    }
+
+    #container-quarto p { /*Configuração do Paragrafo*/
+        display: flex;
+        position: relative;
+        color: black;
+        padding: 15px;
+    }
+
+    #imgtablet04 { /*Configuração da Imagem*/
+        display: flex;
+        position: relative;
+        margin-top: 10px;
+        margin-right: 10px;
+        float: right;
+        width: 400px;
+    }
+
+    @media screen and (min-width: 992px) and (max-width: 1200px) {
+        header {
+         background-image: url(../imagens/logopc.jpg);
+         background-size: cover;
+         background-position: center center;
+        }
+
+        menu {
+         display: block;
+       }
+   
+       menu ul li {
+         display: inline-block; /*Quando a tela aumentar o menu irá ficar um ao lado do outro*/
+         width: 100px; /*O menu irá ficar maior quando a tela aumentar*/
+     }
+   
+    }
+
+    @media screen and (min-width: 1200px) {
+      header {
+       background-image: url(../imagens/logopc.jpg);
+       background-size: cover;
+       background-position: center center;
+      }
+
+      menu {
+         display: block;
+       }
+   
+       menu ul li {
+         display: inline-block; /*Quando a tela aumentar o menu irá ficar um ao lado do outro*/
+         width: 100px; /*O menu irá ficar maior quando a tela aumentar*/
+     }
+
+  }

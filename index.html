@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/medias-queries.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Yang Tec</title>
+</head>
+<body onresize="mudouTamanho()">
+    <header>
+        <!--Inclusão da imagem via CSS-->
+    </header>
+    <span id="burguer" class="material-icons" onclick="clickMenu()">menu</span>
+    <menu id="itens">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Parceiros</a></li>
+            <li><a href="#">Contatos</a></li>
+        </ul>
+    </menu>
+
+    <main>
+        <article>
+        </article>
+    </main>
+    
+    <section id="container-principal">
+        <div id="container-titulo">
+        <h2>História</h2>
+        </div>
+        <div id="container-imagemtexto">
+         <img class="img-sessao" id="imgtablet" src="imagens/goku.jpg" alt="Imagem 01">
+         <p>PRIMEIRA PARTE sit amet consectetur adipisicing elit. Incidunt maxime iste distinctio, voluptatum rem enim temporibus cumque laborum alias. Suscipit odit animi excepturi quia necessitatibus in porro, magnam asperiores neque!. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vero quaerat minima ex sunt necessitatibus sint officiis nobis ducimus sit amet pariatur ipsum quo commodi iusto, soluta perferendis! Iure, inventore expedita.</p>
+        <p>SEGUNDO PARAGRAFO DA PRIMEIRA SESSAO. Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam accusamus omnis ducimus deleniti exercitationem. Asperiores praesentium molestiae facere laborum quos deserunt, illo at quae hic sit temporibus odio doloribus sequi.</p>
+        </div>
+    </section>
+
+    <section id="container-segundo"> <!--Passo 01-->
+         <h2>Serviços</h2>
+         <div id="container-segundaimagem"> <!--Passo 02-->
+        <img class="img-sessao" id="imgtablet02" src="imagens/vegeta.jpg" alt="Imagem 02"> <!--Passo 04-->
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime iste distinctio, voluptatum rem enim temporibus cumque laborum alias. Suscipit odit animi excepturi quia necessitatibus in porro, magnam asperiores neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat quidem repellat error accusamus aspernatur iusto libero rerum, nulla necessitatibus ea quas perferendis beatae in quaerat excepturi voluptate accusantium ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores incidunt provident perspiciatis vitae, libero eveniet, in, ipsam illo qui eum eius nesciunt consequatur corrupti harum excepturi eos maxime itaque quia.</p>
+        </div>
+    </section>
+
+    <section id="container-terceiro"> <!--Config 01-->
+        <h2>Parceiros</h2>
+        <div id="container-terceiraimagem"> <!--Config 02-->
+        <img class="img-sessao" id="imgtablet03" src="imagens/gohan.jpg" alt="Imagem 03">
+        
+        <div id="text03">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime iste distinctio, voluptatum rem enim temporibus cumque laborum alias. Suscipit odit animi excepturi quia necessitatibus in porro, magnam asperiores neque!</p>
+        </div>
+        
+    </div>
+    </section>
+
+    <section id="container-quarto"> <!--Passo 01-->
+        <h2>Contatos</h2>
+        <div id="container-quartaimagem"> <!--Passo 02-->
+       <img class="img-sessao" id="imgtablet04" src="imagens/trunks.jpg" alt="Imagem 04"> <!--Passo 04-->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt maxime iste distinctio, voluptatum rem enim temporibus cumque laborum alias. Suscipit odit animi excepturi quia necessitatibus in porro, magnam asperiores neque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere placeat quidem repellat error accusamus aspernatur iusto libero rerum, nulla necessitatibus ea quas perferendis beatae in quaerat excepturi voluptate accusantium ipsam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores incidunt provident perspiciatis vitae, libero eveniet, in, ipsam illo qui eum eius nesciunt consequatur corrupti harum excepturi eos maxime itaque quia.</p>
+       </div>
+   </section>
+
+   <script>
+    function mudouTamanho() {
+        if (window.innerWidth >= 768) {
+            itens.style.display = 'block'
+        } else {
+            itens.style.display = 'none'
+        }
+    }
+
+    function clickMenu() {
+        if (itens.style.display == 'block') {
+            itens.style.display = 'none'
+        } else {
+            itens.style.display = 'block'
+        }
+
+    }
+</script>
+
+
+
+
+    <footer id="rodape">
+        <p>Desenvolvido Por @Edvaldo Junior 2023</p>
+
+    </footer>
+
+</body>
+</html>
