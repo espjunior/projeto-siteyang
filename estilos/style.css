@@ -38,13 +38,10 @@ header {
 /*----CONFIGURAÇÃO DO MENU ----*/
 menu {
     display: none; /*Fixar o MENU*/
-
 }
 
 menu ul {
     list-style-type: none; /*Retirar a bolinha do MENU*/
-    
-    
 }
 
 menu ul li a { 
@@ -55,13 +52,11 @@ menu ul li a {
     color: #fff; /*Cores dos nomes do Menu*/
     text-align: center; /*Centralização do Menu*/
     border-top: 2px solid rgb(0, 53, 80); /*Cor da linha acima de cada Menu*/
-        
 }
 
 menu ul li a:hover {
     text-decoration: underline;
     background-image: linear-gradient(to right, rgb(0, 104, 122), rgb(5, 6, 6)); /*Cor do Menu após passar o mouse em cima*/
-    
 }
 
 
@@ -129,8 +124,9 @@ section p { /*Configuração dos pragrafos*/
 
 }
 
-.img-sessao {
-    width: 96.5vw;
+/*Configuração das imagens*/
+.img-sessao { 
+    width: 100%;
     border: 2px solid black;
     margin: auto;
 
@@ -156,6 +152,7 @@ section p { /*Configuração dos pragrafos*/
 }
 
 .planos-container {
+    margin-top: 30px;
     background-color: rgb(7, 164, 173);
     padding: 10px;
     text-align: center;
