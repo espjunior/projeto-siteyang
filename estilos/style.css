@@ -38,10 +38,13 @@ header {
 /*----CONFIGURAÇÃO DO MENU ----*/
 menu {
     display: none; /*Fixar o MENU*/
+
 }
 
 menu ul {
     list-style-type: none; /*Retirar a bolinha do MENU*/
+    
+    
 }
 
 menu ul li a { 
@@ -52,11 +55,13 @@ menu ul li a {
     color: #fff; /*Cores dos nomes do Menu*/
     text-align: center; /*Centralização do Menu*/
     border-top: 2px solid rgb(0, 53, 80); /*Cor da linha acima de cada Menu*/
+        
 }
 
 menu ul li a:hover {
     text-decoration: underline;
     background-image: linear-gradient(to right, rgb(0, 104, 122), rgb(5, 6, 6)); /*Cor do Menu após passar o mouse em cima*/
+    
 }
 
 
@@ -71,11 +76,14 @@ span#burguer {
     text-align: center; /*Centralização do icone*/
     padding: 5px; /*Espaçamento interno*/
     cursor: pointer; /*O curso irá virar uma mão*/
+    transition: .5s;
+    
 }
 
 span#burguer:hover {
     color: black;
     background-image: linear-gradient(to right, rgb(34, 192, 150), rgb(213, 213, 213)); /*Cor do fundo do Menu*/
+    
 }
 /*-----------------------------------*/
 
@@ -113,12 +121,11 @@ section h2 {
 
 section p { /*Configuração dos pragrafos*/
     color: black;
-
     text-align: justify;
     text-indent: 30px;
     padding-top: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
 
 }
 
@@ -128,6 +135,45 @@ section p { /*Configuração dos pragrafos*/
     margin: auto;
 
 }
+/*-----------------------------------------*/
+
+/*Configuração da seção de Nossos Planos*/
+
+.planos-container h2 {
+    margin-bottom: 50px;
+    
+}
+
+.planos-container p {
+    color: black;
+    padding: 10px;
+    margin-bottom: 70px;
+}
+
+
+.planos-container ul  {
+    list-style-type: none;
+}
+
+.planos-container {
+    background-color: rgb(7, 164, 173);
+    padding: 10px;
+    text-align: center;
+}
+
+
+.tamanho-icon { /**Configuraçao dos icones*/
+    color: rgb(2, 70, 65);
+}
+
+.tamanho-icon span {
+    font-size: 80px; /*Tamanho dos Icones*/
+    border-radius: 10px;
+    margin-bottom: 30px;
+    background-image: linear-gradient(to right, #2482aa, rgb(242, 242, 244));
+    
+}
+/*-----------------------------------------*/
 
 #rodape {
     display: flex;
