@@ -5,14 +5,22 @@
 -----------------------------   
 Pequenas telas: até 600px 
 Celular: de 600px até 768px
-Tablet: de 768 até 992px
-Desktop: de 992 até 1200px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
 Grandes Telas: acima de 1200px
 */
 
+@media screen and (min-width: 590px) {
+    header {
+        background-image: url(../imagens/logocelular02.jpg);
+        background-size: cover;
+        background-position: center center;
+    }
+}
+
 @media screen and (min-width: 768px) {
     header {
-        background-image: url(../imagens/logotablet.jpg);
+        background-image: url(../imagens//logotablet02.jpg);
         background-size: cover;
         background-position: center center;
     }
